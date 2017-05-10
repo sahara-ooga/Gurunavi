@@ -6,10 +6,14 @@ target 'Gurunavi' do
   use_frameworks!
 
   # Pods for Gurunavi
-
+    pod 'Alamofire'
+    pod 'AlamofireImage'
+    
   target 'GurunaviTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'Alamofire'
+    pod 'AlamofireImage'
   end
 
 end
