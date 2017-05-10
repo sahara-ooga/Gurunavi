@@ -8,11 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		106C2EBA1EC3497500EC22C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2EB91EC3497500EC22C6 /* AppDelegate.swift */; };
-		106C2EBC1EC3497500EC22C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2EBB1EC3497500EC22C6 /* ViewController.swift */; };
+		106C2EBC1EC3497500EC22C6 /* AreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2EBB1EC3497500EC22C6 /* AreaViewController.swift */; };
 		106C2EBF1EC3497500EC22C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 106C2EBD1EC3497500EC22C6 /* Main.storyboard */; };
 		106C2EC11EC3497500EC22C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 106C2EC01EC3497500EC22C6 /* Assets.xcassets */; };
 		106C2EC41EC3497500EC22C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 106C2EC21EC3497500EC22C6 /* LaunchScreen.storyboard */; };
 		106C2ECF1EC3497500EC22C6 /* GurunaviTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2ECE1EC3497500EC22C6 /* GurunaviTests.swift */; };
+		106C2EDB1EC34A8500EC22C6 /* AreaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2ED91EC34A8500EC22C6 /* AreaTableViewCell.swift */; };
+		106C2EDC1EC34A8500EC22C6 /* AreaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2ED91EC34A8500EC22C6 /* AreaTableViewCell.swift */; };
+		106C2EDD1EC34A8500EC22C6 /* AreaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 106C2EDA1EC34A8500EC22C6 /* AreaTableViewCell.xib */; };
+		106C2EDE1EC34A8500EC22C6 /* AreaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 106C2EDA1EC34A8500EC22C6 /* AreaTableViewCell.xib */; };
+		106C2EE11EC34AA700EC22C6 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2EDF1EC34AA700EC22C6 /* RestaurantTableViewCell.swift */; };
+		106C2EE21EC34AA700EC22C6 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2EDF1EC34AA700EC22C6 /* RestaurantTableViewCell.swift */; };
+		106C2EE31EC34AA700EC22C6 /* RestaurantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 106C2EE01EC34AA700EC22C6 /* RestaurantTableViewCell.xib */; };
+		106C2EE41EC34AA700EC22C6 /* RestaurantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 106C2EE01EC34AA700EC22C6 /* RestaurantTableViewCell.xib */; };
+		106C2EE61EC34B1A00EC22C6 /* GurunaviFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2EE51EC34B1A00EC22C6 /* GurunaviFetcher.swift */; };
+		106C2EE71EC34B1A00EC22C6 /* GurunaviFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2EE51EC34B1A00EC22C6 /* GurunaviFetcher.swift */; };
+		106C2EE91EC34B7000EC22C6 /* GurunaviConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2EE81EC34B7000EC22C6 /* GurunaviConnector.swift */; };
+		106C2EEA1EC34B7000EC22C6 /* GurunaviConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2EE81EC34B7000EC22C6 /* GurunaviConnector.swift */; };
+		106C2EED1EC34BC300EC22C6 /* RestaurantsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2EEB1EC34BC300EC22C6 /* RestaurantsTableViewController.swift */; };
+		106C2EEE1EC34BC300EC22C6 /* RestaurantsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2EEB1EC34BC300EC22C6 /* RestaurantsTableViewController.swift */; };
+		106C2EEF1EC34BC300EC22C6 /* RestaurantsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 106C2EEC1EC34BC300EC22C6 /* RestaurantsTableViewController.xib */; };
+		106C2EF01EC34BC300EC22C6 /* RestaurantsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 106C2EEC1EC34BC300EC22C6 /* RestaurantsTableViewController.xib */; };
+		106C2EF61EC34DC000EC22C6 /* AreaDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2EF51EC34DC000EC22C6 /* AreaDataSource.swift */; };
+		106C2EF71EC34DC000EC22C6 /* AreaDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2EF51EC34DC000EC22C6 /* AreaDataSource.swift */; };
+		106C2EF91EC34E0900EC22C6 /* RestaurantsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2EF81EC34E0900EC22C6 /* RestaurantsDataSource.swift */; };
+		106C2EFA1EC34E0900EC22C6 /* RestaurantsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2EF81EC34E0900EC22C6 /* RestaurantsDataSource.swift */; };
+		106C2EFC1EC34E2F00EC22C6 /* DaoRestaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2EFB1EC34E2F00EC22C6 /* DaoRestaurants.swift */; };
+		106C2EFD1EC34E2F00EC22C6 /* DaoRestaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2EFB1EC34E2F00EC22C6 /* DaoRestaurants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +50,7 @@
 /* Begin PBXFileReference section */
 		106C2EB61EC3497500EC22C6 /* Gurunavi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gurunavi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		106C2EB91EC3497500EC22C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		106C2EBB1EC3497500EC22C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		106C2EBB1EC3497500EC22C6 /* AreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaViewController.swift; sourceTree = "<group>"; };
 		106C2EBE1EC3497500EC22C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		106C2EC01EC3497500EC22C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		106C2EC31EC3497500EC22C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +58,17 @@
 		106C2ECA1EC3497500EC22C6 /* GurunaviTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GurunaviTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		106C2ECE1EC3497500EC22C6 /* GurunaviTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GurunaviTests.swift; sourceTree = "<group>"; };
 		106C2ED01EC3497500EC22C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		106C2ED91EC34A8500EC22C6 /* AreaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaTableViewCell.swift; sourceTree = "<group>"; };
+		106C2EDA1EC34A8500EC22C6 /* AreaTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AreaTableViewCell.xib; sourceTree = "<group>"; };
+		106C2EDF1EC34AA700EC22C6 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		106C2EE01EC34AA700EC22C6 /* RestaurantTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RestaurantTableViewCell.xib; sourceTree = "<group>"; };
+		106C2EE51EC34B1A00EC22C6 /* GurunaviFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GurunaviFetcher.swift; sourceTree = "<group>"; };
+		106C2EE81EC34B7000EC22C6 /* GurunaviConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GurunaviConnector.swift; sourceTree = "<group>"; };
+		106C2EEB1EC34BC300EC22C6 /* RestaurantsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantsTableViewController.swift; sourceTree = "<group>"; };
+		106C2EEC1EC34BC300EC22C6 /* RestaurantsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RestaurantsTableViewController.xib; sourceTree = "<group>"; };
+		106C2EF51EC34DC000EC22C6 /* AreaDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaDataSource.swift; sourceTree = "<group>"; };
+		106C2EF81EC34E0900EC22C6 /* RestaurantsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantsDataSource.swift; sourceTree = "<group>"; };
+		106C2EFB1EC34E2F00EC22C6 /* DaoRestaurants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaoRestaurants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +110,10 @@
 		106C2EB81EC3497500EC22C6 /* Gurunavi */ = {
 			isa = PBXGroup;
 			children = (
-				106C2EB91EC3497500EC22C6 /* AppDelegate.swift */,
-				106C2EBB1EC3497500EC22C6 /* ViewController.swift */,
-				106C2EBD1EC3497500EC22C6 /* Main.storyboard */,
-				106C2EC01EC3497500EC22C6 /* Assets.xcassets */,
-				106C2EC21EC3497500EC22C6 /* LaunchScreen.storyboard */,
-				106C2EC51EC3497500EC22C6 /* Info.plist */,
+				106C2EF11EC34C1300EC22C6 /* Controller */,
+				106C2EF41EC34C5200EC22C6 /* Models */,
+				106C2EF31EC34C4100EC22C6 /* Resources */,
+				106C2EF21EC34C3400EC22C6 /* View */,
 			);
 			path = Gurunavi;
 			sourceTree = "<group>";
@@ -94,6 +125,55 @@
 				106C2ED01EC3497500EC22C6 /* Info.plist */,
 			);
 			path = GurunaviTests;
+			sourceTree = "<group>";
+		};
+		106C2EF11EC34C1300EC22C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				106C2EB91EC3497500EC22C6 /* AppDelegate.swift */,
+				106C2EBB1EC3497500EC22C6 /* AreaViewController.swift */,
+				106C2EEB1EC34BC300EC22C6 /* RestaurantsTableViewController.swift */,
+			);
+			name = Controller;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		106C2EF21EC34C3400EC22C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				106C2ED91EC34A8500EC22C6 /* AreaTableViewCell.swift */,
+				106C2EDA1EC34A8500EC22C6 /* AreaTableViewCell.xib */,
+				106C2EC21EC3497500EC22C6 /* LaunchScreen.storyboard */,
+				106C2EBD1EC3497500EC22C6 /* Main.storyboard */,
+				106C2EDF1EC34AA700EC22C6 /* RestaurantTableViewCell.swift */,
+				106C2EE01EC34AA700EC22C6 /* RestaurantTableViewCell.xib */,
+				106C2EEC1EC34BC300EC22C6 /* RestaurantsTableViewController.xib */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		106C2EF31EC34C4100EC22C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				106C2EC01EC3497500EC22C6 /* Assets.xcassets */,
+				106C2EC51EC3497500EC22C6 /* Info.plist */,
+			);
+			name = Resources;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		106C2EF41EC34C5200EC22C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				106C2EF51EC34DC000EC22C6 /* AreaDataSource.swift */,
+				106C2EFB1EC34E2F00EC22C6 /* DaoRestaurants.swift */,
+				106C2EE81EC34B7000EC22C6 /* GurunaviConnector.swift */,
+				106C2EE51EC34B1A00EC22C6 /* GurunaviFetcher.swift */,
+				106C2EF81EC34E0900EC22C6 /* RestaurantsDataSource.swift */,
+			);
+			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +263,9 @@
 			files = (
 				106C2EC41EC3497500EC22C6 /* LaunchScreen.storyboard in Resources */,
 				106C2EC11EC3497500EC22C6 /* Assets.xcassets in Resources */,
+				106C2EE31EC34AA700EC22C6 /* RestaurantTableViewCell.xib in Resources */,
+				106C2EDD1EC34A8500EC22C6 /* AreaTableViewCell.xib in Resources */,
+				106C2EEF1EC34BC300EC22C6 /* RestaurantsTableViewController.xib in Resources */,
 				106C2EBF1EC3497500EC22C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,6 +274,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				106C2EE41EC34AA700EC22C6 /* RestaurantTableViewCell.xib in Resources */,
+				106C2EF01EC34BC300EC22C6 /* RestaurantsTableViewController.xib in Resources */,
+				106C2EDE1EC34A8500EC22C6 /* AreaTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,8 +287,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				106C2EBC1EC3497500EC22C6 /* ViewController.swift in Sources */,
+				106C2EE61EC34B1A00EC22C6 /* GurunaviFetcher.swift in Sources */,
+				106C2EE11EC34AA700EC22C6 /* RestaurantTableViewCell.swift in Sources */,
+				106C2EE91EC34B7000EC22C6 /* GurunaviConnector.swift in Sources */,
+				106C2EF61EC34DC000EC22C6 /* AreaDataSource.swift in Sources */,
+				106C2EF91EC34E0900EC22C6 /* RestaurantsDataSource.swift in Sources */,
+				106C2EFC1EC34E2F00EC22C6 /* DaoRestaurants.swift in Sources */,
+				106C2EBC1EC3497500EC22C6 /* AreaViewController.swift in Sources */,
+				106C2EDB1EC34A8500EC22C6 /* AreaTableViewCell.swift in Sources */,
 				106C2EBA1EC3497500EC22C6 /* AppDelegate.swift in Sources */,
+				106C2EED1EC34BC300EC22C6 /* RestaurantsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +304,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				106C2EDC1EC34A8500EC22C6 /* AreaTableViewCell.swift in Sources */,
+				106C2EE21EC34AA700EC22C6 /* RestaurantTableViewCell.swift in Sources */,
+				106C2EF71EC34DC000EC22C6 /* AreaDataSource.swift in Sources */,
+				106C2EEE1EC34BC300EC22C6 /* RestaurantsTableViewController.swift in Sources */,
+				106C2EE71EC34B1A00EC22C6 /* GurunaviFetcher.swift in Sources */,
+				106C2EFA1EC34E0900EC22C6 /* RestaurantsDataSource.swift in Sources */,
+				106C2EFD1EC34E2F00EC22C6 /* DaoRestaurants.swift in Sources */,
+				106C2EEA1EC34B7000EC22C6 /* GurunaviConnector.swift in Sources */,
 				106C2ECF1EC3497500EC22C6 /* GurunaviTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,6 +333,7 @@
 				106C2EBE1EC3497500EC22C6 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		106C2EC21EC3497500EC22C6 /* LaunchScreen.storyboard */ = {
@@ -239,6 +342,7 @@
 				106C2EC31EC3497500EC22C6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -342,7 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PCCZJUYRT6;
-				INFOPLIST_FILE = Gurunavi/Info.plist;
+				INFOPLIST_FILE = Gurunavi/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "smart-tech-ventures.Gurunavi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,7 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PCCZJUYRT6;
-				INFOPLIST_FILE = Gurunavi/Info.plist;
+				INFOPLIST_FILE = Gurunavi/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "smart-tech-ventures.Gurunavi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
