@@ -130,26 +130,20 @@
 		106C2EF11EC34C1300EC22C6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				106C2F011EC3500A00EC22C6 /* ViewController */,
 				106C2EB91EC3497500EC22C6 /* AppDelegate.swift */,
-				106C2EBB1EC3497500EC22C6 /* AreaViewController.swift */,
-				106C2EEB1EC34BC300EC22C6 /* RestaurantsTableViewController.swift */,
 			);
-			name = Controller;
 			path = Controller;
 			sourceTree = "<group>";
 		};
 		106C2EF21EC34C3400EC22C6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				106C2ED91EC34A8500EC22C6 /* AreaTableViewCell.swift */,
-				106C2EDA1EC34A8500EC22C6 /* AreaTableViewCell.xib */,
+				106C2EFE1EC34FBE00EC22C6 /* TableViewCell */,
 				106C2EC21EC3497500EC22C6 /* LaunchScreen.storyboard */,
 				106C2EBD1EC3497500EC22C6 /* Main.storyboard */,
-				106C2EDF1EC34AA700EC22C6 /* RestaurantTableViewCell.swift */,
-				106C2EE01EC34AA700EC22C6 /* RestaurantTableViewCell.xib */,
 				106C2EEC1EC34BC300EC22C6 /* RestaurantsTableViewController.xib */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -159,21 +153,59 @@
 				106C2EC01EC3497500EC22C6 /* Assets.xcassets */,
 				106C2EC51EC3497500EC22C6 /* Info.plist */,
 			);
-			name = Resources;
 			path = Resources;
 			sourceTree = "<group>";
 		};
 		106C2EF41EC34C5200EC22C6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				106C2F001EC34FF600EC22C6 /* Connection */,
+				106C2EFF1EC34FE700EC22C6 /* DataSource */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		106C2EFE1EC34FBE00EC22C6 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				106C2ED91EC34A8500EC22C6 /* AreaTableViewCell.swift */,
+				106C2EDA1EC34A8500EC22C6 /* AreaTableViewCell.xib */,
+				106C2EDF1EC34AA700EC22C6 /* RestaurantTableViewCell.swift */,
+				106C2EE01EC34AA700EC22C6 /* RestaurantTableViewCell.xib */,
+			);
+			name = TableViewCell;
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		106C2EFF1EC34FE700EC22C6 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
 				106C2EF51EC34DC000EC22C6 /* AreaDataSource.swift */,
+				106C2EF81EC34E0900EC22C6 /* RestaurantsDataSource.swift */,
+			);
+			name = DataSource;
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		106C2F001EC34FF600EC22C6 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
 				106C2EFB1EC34E2F00EC22C6 /* DaoRestaurants.swift */,
 				106C2EE81EC34B7000EC22C6 /* GurunaviConnector.swift */,
 				106C2EE51EC34B1A00EC22C6 /* GurunaviFetcher.swift */,
-				106C2EF81EC34E0900EC22C6 /* RestaurantsDataSource.swift */,
 			);
-			name = Models;
-			path = Models;
+			name = Connection;
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		106C2F011EC3500A00EC22C6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				106C2EBB1EC3497500EC22C6 /* AreaViewController.swift */,
+				106C2EEB1EC34BC300EC22C6 /* RestaurantsTableViewController.swift */,
+			);
+			name = ViewController;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -516,6 +548,7 @@
 				106C2ED51EC3497500EC22C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		106C2ED61EC3497500EC22C6 /* Build configuration list for PBXNativeTarget "GurunaviTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +557,7 @@
 				106C2ED81EC3497500EC22C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
