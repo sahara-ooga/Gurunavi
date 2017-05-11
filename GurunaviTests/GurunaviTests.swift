@@ -23,7 +23,7 @@ class GurunaviTests: XCTestCase {
     
     func testParseJSON() {
         let json = JSONParser.parse(name: "area")
-        let areaJSON = json["garea_large"];
+        let areaJSON = json["garea_large"]
         XCTAssertNotNil(areaJSON)
         
         for area in areaJSON {
@@ -35,6 +35,13 @@ class GurunaviTests: XCTestCase {
         }
         //もし東京都が無ければテスト失敗
         XCTFail()
+    }
+    
+    func testAreaNames(){
+        //FIXME:改善の余地あり
+        let areaDataSource = AreaDataSource()
+        let array = areaDataSource.areaNames()
+        XCTAssertTrue(array.contains("銀座・有楽町・築地"))
     }
     
     func testPerformanceExample() {
