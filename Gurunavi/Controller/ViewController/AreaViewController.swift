@@ -9,10 +9,16 @@
 import UIKit
 
 class AreaViewController: UIViewController {
-
+    @IBOutlet weak var tableView: UITableView!
+    
+    let areaDataSource = AreaDataSource()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        tableView.dataSource = areaDataSource
+        
+        registerNibs()
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +26,10 @@ class AreaViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func registerNibs() {
+        self.tableView.register(UINib.init(nibName: String(describing: AreaTableViewCell.self),
+                                           bundle: nil),
+                                forCellReuseIdentifier: String(describing: AreaTableViewCell.self))
+    }
 }
 

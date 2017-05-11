@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class AreaDataSource:NSObject /*, UITableViewDataSource*/ {
+class AreaDataSource:NSObject, UITableViewDataSource {
 
     var areas = [String]()
     
