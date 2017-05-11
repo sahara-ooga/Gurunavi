@@ -19,12 +19,19 @@ class AreaDataSource:NSObject /*, UITableViewDataSource*/ {
         areas = areaNames()
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+    func tableView(_ tableView: UITableView,
+                   numberOfRowsInSection section: Int) -> Int {
+        return areas.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+    func tableView(_ tableView: UITableView,
+                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AreaTableViewCell.self),
+                                                 for: indexPath) as! AreaTableViewCell
+        cell.setCell(areaName: areas[indexPath.row])
+        
+        return cell
     }
     
     func areaNames()-> [String] {
