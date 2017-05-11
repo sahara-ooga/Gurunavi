@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-struct JSONParser {
+public struct JSONParser {
     func parse(jsonData:Data) -> JSON {
         return JSON(data:jsonData)
     }

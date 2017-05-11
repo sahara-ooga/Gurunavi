@@ -22,8 +22,13 @@ class GurunaviTests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        //テスト対象のJSONファイルを読み込む
+        let path : String = Bundle.main.path(forResource: "area", ofType: "json")!
+        let fileHandle : FileHandle = FileHandle(forReadingAtPath: path)!
+        let data : Data = fileHandle.readDataToEndOfFile() as Data
+        
+        let JSON = JSONParser().parse(jsonData: data)
+        
     }
     
     func testPerformanceExample() {

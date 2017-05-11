@@ -1,4 +1,4 @@
-tignore
+#.gitignore
 
 #Mac system file
 .DS_Store
@@ -26,7 +26,8 @@ xcuserdata/
 *.moved-aside
 *.xccheckout
 *.xcscmblueprint
-
+*.playground
+*.playground/*
 ## Obj-C/Swift specific
 *.hmap
 *.ipa
