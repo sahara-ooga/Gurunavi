@@ -35,6 +35,8 @@
 		106C2EFA1EC34E0900EC22C6 /* RestaurantsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2EF81EC34E0900EC22C6 /* RestaurantsDataSource.swift */; };
 		106C2EFC1EC34E2F00EC22C6 /* DaoRestaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2EFB1EC34E2F00EC22C6 /* DaoRestaurants.swift */; };
 		106C2EFD1EC34E2F00EC22C6 /* DaoRestaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2EFB1EC34E2F00EC22C6 /* DaoRestaurants.swift */; };
+		1F7622A61EC4045400AE9F4C /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7622A51EC4045400AE9F4C /* JSONParser.swift */; };
+		1F7622A71EC4045400AE9F4C /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7622A51EC4045400AE9F4C /* JSONParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,7 @@
 		106C2EF51EC34DC000EC22C6 /* AreaDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaDataSource.swift; sourceTree = "<group>"; };
 		106C2EF81EC34E0900EC22C6 /* RestaurantsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantsDataSource.swift; sourceTree = "<group>"; };
 		106C2EFB1EC34E2F00EC22C6 /* DaoRestaurants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaoRestaurants.swift; sourceTree = "<group>"; };
+		1F7622A51EC4045400AE9F4C /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,7 +176,6 @@
 				106C2EDF1EC34AA700EC22C6 /* RestaurantTableViewCell.swift */,
 				106C2EE01EC34AA700EC22C6 /* RestaurantTableViewCell.xib */,
 			);
-			name = TableViewCell;
 			path = TableViewCell;
 			sourceTree = "<group>";
 		};
@@ -182,8 +184,8 @@
 			children = (
 				106C2EF51EC34DC000EC22C6 /* AreaDataSource.swift */,
 				106C2EF81EC34E0900EC22C6 /* RestaurantsDataSource.swift */,
+				1F7622A51EC4045400AE9F4C /* JSONParser.swift */,
 			);
-			name = DataSource;
 			path = DataSource;
 			sourceTree = "<group>";
 		};
@@ -194,7 +196,6 @@
 				106C2EE81EC34B7000EC22C6 /* GurunaviConnector.swift */,
 				106C2EE51EC34B1A00EC22C6 /* GurunaviFetcher.swift */,
 			);
-			name = Connection;
 			path = Connection;
 			sourceTree = "<group>";
 		};
@@ -204,7 +205,6 @@
 				106C2EBB1EC3497500EC22C6 /* AreaViewController.swift */,
 				106C2EEB1EC34BC300EC22C6 /* RestaurantsTableViewController.swift */,
 			);
-			name = ViewController;
 			path = ViewController;
 			sourceTree = "<group>";
 		};
@@ -322,6 +322,7 @@
 				106C2EE61EC34B1A00EC22C6 /* GurunaviFetcher.swift in Sources */,
 				106C2EE11EC34AA700EC22C6 /* RestaurantTableViewCell.swift in Sources */,
 				106C2EE91EC34B7000EC22C6 /* GurunaviConnector.swift in Sources */,
+				1F7622A61EC4045400AE9F4C /* JSONParser.swift in Sources */,
 				106C2EF61EC34DC000EC22C6 /* AreaDataSource.swift in Sources */,
 				106C2EF91EC34E0900EC22C6 /* RestaurantsDataSource.swift in Sources */,
 				106C2EFC1EC34E2F00EC22C6 /* DaoRestaurants.swift in Sources */,
@@ -342,6 +343,7 @@
 				106C2EEE1EC34BC300EC22C6 /* RestaurantsTableViewController.swift in Sources */,
 				106C2EE71EC34B1A00EC22C6 /* GurunaviFetcher.swift in Sources */,
 				106C2EFA1EC34E0900EC22C6 /* RestaurantsDataSource.swift in Sources */,
+				1F7622A71EC4045400AE9F4C /* JSONParser.swift in Sources */,
 				106C2EFD1EC34E2F00EC22C6 /* DaoRestaurants.swift in Sources */,
 				106C2EEA1EC34B7000EC22C6 /* GurunaviConnector.swift in Sources */,
 				106C2ECF1EC3497500EC22C6 /* GurunaviTests.swift in Sources */,
