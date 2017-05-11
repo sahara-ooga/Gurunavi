@@ -1,16 +1,11 @@
-//
-//  JSONParser.swift
-//  Gurunavi
-//
-//  Created by yuu ogasawara on 2017/05/11.
-//  Copyright © 2017年 smart tech ventures. All rights reserved.
-//
-
 import Foundation
 import SwiftyJSON
 
-public struct JSONParser {
-    func parse(jsonData:Data) -> JSON {
-        return JSON(data:jsonData)
+struct JSONParser{
+    static func parse(name:String)->JSON{
+        let path : String = Bundle.main.path(forResource: name, ofType: "json")!
+        let fileHandle : FileHandle = FileHandle(forReadingAtPath: path)!
+        let data : Data = fileHandle.readDataToEndOfFile() as Data
+        return JSON(data: data)
     }
 }

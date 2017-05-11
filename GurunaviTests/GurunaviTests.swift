@@ -21,14 +21,20 @@ class GurunaviTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        //テスト対象のJSONファイルを読み込む
-        let path : String = Bundle.main.path(forResource: "area", ofType: "json")!
-        let fileHandle : FileHandle = FileHandle(forReadingAtPath: path)!
-        let data : Data = fileHandle.readDataToEndOfFile() as Data
+    func testParseJSON() {
+        let json = JSONParser.parse(name: "area")
+        let areaJSON = json["garea_large"];
+        XCTAssertNotNil(areaJSON)
         
-        let JSON = JSONParser().parse(jsonData: data)
-        
+        for area in areaJSON {
+            //"pref_code"を指定して東京都に絞り込む
+            let prefCode = area.1["pref"]["pref_code"]
+            if prefCode == "PREF13" {
+                return
+            }
+        }
+        //もし東京都が無ければテスト失敗
+        XCTFail()
     }
     
     func testPerformanceExample() {
