@@ -9,6 +9,7 @@
 import UIKit
 
 class AreaTableViewCell: UITableViewCell {
+    @IBOutlet weak var areaNameLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,4 +22,7 @@ class AreaTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func setCell(areaName:String) {
+        areaNameLabel.text = areaName
+    }
 }
