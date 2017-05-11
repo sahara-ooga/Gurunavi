@@ -8,12 +8,14 @@ target 'Gurunavi' do
   # Pods for Gurunavi
     pod 'Alamofire'
     pod 'AlamofireImage'
-    
+    pod 'SwiftyJSON'    
+  
   target 'GurunaviTests' do
     inherit! :search_paths
     # Pods for testing
     pod 'Alamofire'
     pod 'AlamofireImage'
+    pod 'SwiftyJSON'    
   end
 
 end
