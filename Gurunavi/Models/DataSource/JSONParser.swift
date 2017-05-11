@@ -7,6 +7,10 @@
 //
 
 import Foundation
+import SwiftyJSON
+
 struct JSONParser {
-    let string = "33"
+    func parse(jsonData:Data) -> JSON {
+        return JSON(data:jsonData)
+    }
 }
