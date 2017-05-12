@@ -1,0 +1,91 @@
+{
+      "@attributes": {
+        "order": "8"
+      },
+      "id": "gdgc201",
+      "update_date": "2017-05-12 03:56:35",
+      "name": "隠れ家個室居酒屋 鳥の利久 八重洲口店",
+      "name_kana": "カクレガコシツイザカヤトリノリキュウ ヤエスグチテン",
+      "latitude": "35.676475",
+      "longitude": "139.772925",
+      "category": "個室居酒屋×地鶏料理",
+      "url": "https://r.gnavi.co.jp/b101sy2y0000/?ak=7JBc3eDtHSyiovPMuU74UftjRuWJTDhO%2BbIGiEoROic%3D",
+      "url_mobile": "http://mobile.gnavi.co.jp/shop/gdgc201/?ak=7JBc3eDtHSyiovPMuU74UftjRuWJTDhO%2BbIGiEoROic%3D",
+      "coupon_url": {
+        "pc": "https://r.gnavi.co.jp/b101sy2y0000/coupon/",
+        "mobile": "http://mobile.gnavi.co.jp/shop/gdgc201/coupon"
+      },
+      "image_url": {
+        "shop_image1": "https://uds.gnst.jp/rest/img/b101sy2y0000/t_0000.jpg",
+        "shop_image2": {},
+        "qrcode": "https://c-r.gnst.jp/tool/qr/?id=gdgc201&q=6"
+      },
+      "address": "〒104-0028 東京都中央区八重洲2-1-4 松勇八重洲ビル7F",
+      "tel": "050-3462-6007",
+      "tel_sub": "080-2342-5340  (受付：9時～24時)",
+      "fax": {},
+      "opentime": " 11:00～23:30",
+      "holiday": "不定休日あり",
+      "access": {
+        "line": "ＪＲ",
+        "station": "東京駅",
+        "station_exit": {},
+        "walk": "3",
+        "note": {}
+      },
+      "parking_lots": {},
+      "pr": {
+        "pr_short": "【NEW OPEN!!東京駅3分】八重洲口至近×個室居酒屋 【宴会コース】最大3時間飲み放題付 3480円～ 【全席完全個室】2名様～70名様まで個室完備♪ 【厳選された地鶏料理】",
+        "pr_long": "回回 東京駅八重洲にNEW OPEN《全席完全個室居酒屋》～地鶏料理～ 回回<BR>― 隠れ家個室居酒屋 鳥の利久 八重洲口店 ―<BR>【全席完全個室】2名～最大70名様迄！<BR>落ち着いた雰囲気の扉で仕切られたプライベート完全個室<BR>…東京八重洲での接待や歓送迎会、デートや誕生日などに◎<BR><BR>～ 全国各地のブランド地鶏・築地直送の新鮮な海鮮・魚介類 ～<BR>知識と経験豊富な料理長が目利きした厳選食材を使用した和食料理♪<BR>東京八重洲にいながら、全国の料理人たちのこだわりを体感できます！<BR>― 宴会コース最大3時間飲み放題付 ―<BR>▽ 全８品『比内コース』  2時間飲み放題 3480円<BR>▽ 全９品『会津コース』最大3時間飲み放題 3980円<BR>▽ 全10品『大山コース』  3時間飲み放題 4980円<BR>【東京八重洲での接待や歓送迎会、飲み会など各種宴会に最適◎】"
+      },
+      "code": {
+        "areacode": "AREA110",
+        "areaname": "関東",
+        "prefcode": "PREF13",
+        "prefname": "東京都",
+        "areacode_s": "AREAS2260",
+        "areaname_s": "東京駅（八重洲）",
+        "category_code_l": [
+          "RSFST09000",
+          {
+            "@attributes": {
+              "order": "1"
+            }
+          }
+        ],
+        "category_name_l": [
+          "居酒屋",
+          {
+            "@attributes": {
+              "order": "1"
+            }
+          }
+        ],
+        "category_code_s": [
+          "RSFST09004",
+          {
+            "@attributes": {
+              "order": "1"
+            }
+          }
+        ],
+        "category_name_s": [
+          "居酒屋",
+          {
+            "@attributes": {
+              "order": "1"
+            }
+          }
+        ]
+      },
+      "budget": "3000",
+      "party": "3500",
+      "lunch": "3000",
+      "credit_card": "VISA,MasterCard,アメリカン・エキスプレス,JCB,銀聯",
+      "e_money": {},
+      "flags": {
+        "mobile_site": "1",
+        "mobile_coupon": "1",
+        "pc_coupon": "1"
+      }
+    }
