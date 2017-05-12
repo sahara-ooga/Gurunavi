@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		105D7F071EC622FC00675B8B /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D7F061EC622FC00675B8B /* Notifications.swift */; };
+		105D7F081EC622FC00675B8B /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D7F061EC622FC00675B8B /* Notifications.swift */; };
 		106C2EBA1EC3497500EC22C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2EB91EC3497500EC22C6 /* AppDelegate.swift */; };
 		106C2EBC1EC3497500EC22C6 /* AreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2EBB1EC3497500EC22C6 /* AreaViewController.swift */; };
 		106C2EBF1EC3497500EC22C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 106C2EBD1EC3497500EC22C6 /* Main.storyboard */; };
@@ -63,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		105D7F061EC622FC00675B8B /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		106C2EB61EC3497500EC22C6 /* Gurunavi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gurunavi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		106C2EB91EC3497500EC22C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		106C2EBB1EC3497500EC22C6 /* AreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +195,7 @@
 				106C2EC51EC3497500EC22C6 /* Info.plist */,
 				1F9C4E4B1EC596C0008D7AB2 /* Constants.swift */,
 				1F9C4E511EC59FA5008D7AB2 /* FileOrganizer.swift */,
+				105D7F061EC622FC00675B8B /* Notifications.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -485,6 +489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				106C2EE61EC34B1A00EC22C6 /* GurunaviFetcher.swift in Sources */,
+				105D7F071EC622FC00675B8B /* Notifications.swift in Sources */,
 				106C2EE11EC34AA700EC22C6 /* RestaurantTableViewCell.swift in Sources */,
 				106C2EE91EC34B7000EC22C6 /* GurunaviConnector.swift in Sources */,
 				1F9C4E521EC59FA5008D7AB2 /* FileOrganizer.swift in Sources */,
@@ -507,6 +512,7 @@
 			files = (
 				1F9C4E4A1EC58429008D7AB2 /* Restaurant.swift in Sources */,
 				106C2EDC1EC34A8500EC22C6 /* AreaTableViewCell.swift in Sources */,
+				105D7F081EC622FC00675B8B /* Notifications.swift in Sources */,
 				106C2EE21EC34AA700EC22C6 /* RestaurantTableViewCell.swift in Sources */,
 				106C2EF71EC34DC000EC22C6 /* AreaDataSource.swift in Sources */,
 				106C2EEE1EC34BC300EC22C6 /* RestaurantsTableViewController.swift in Sources */,

@@ -11,6 +11,12 @@ import XCTest
 
 class GurunaviTests: XCTestCase {
     
+    let url = "https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=fcd458b7f390f29fdf4d5d04d4c60e42&format=json&areacode_l=AREAL2169&hit_per_page=50&offset_page=1"
+    
+    let dao:DaoRestaurants = DaoRestaurants.sharedInstance
+    
+    var expectation:XCTestExpectation?
+    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -19,6 +25,8 @@ class GurunaviTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+        self.expectation = nil
+        NotificationCenter.default.removeObserver(self)
     }
     
     func testParseJSON() {
@@ -76,7 +84,7 @@ class GurunaviTests: XCTestCase {
         XCTAssertEqual(restaurant.imageURL,"https://uds.gnst.jp/rest/img/b101sy2y0000/t_0000.jpg")
     }
     
-    func testConnector() {
+    func testConnectorToFetch() {
         
         let url = "https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=fcd458b7f390f29fdf4d5d04d4c60e42&format=json&areacode_l=AREAL2169&hit_per_page=50&offset_page=1"
 
@@ -91,6 +99,25 @@ class GurunaviTests: XCTestCase {
         
         waitForExpectations(timeout: 30.0,
                             handler:nil)
+    }
+    
+    func testDaoToFetch() {
+        self.expectation = self.expectation(description: "receive restaurant info")
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(daoDidReceiveInfo(notification:)),
+                                               name: NSNotification.Name(rawValue: Constants.NotificationName.didReceiveRestaurantInfo),
+                                               object: nil)
+        
+        dao.fetchRestaurantInfo(url: url)
+        
+        waitForExpectations(timeout: 30.0,
+                            handler:nil)
+    }
+    
+    func daoDidReceiveInfo(notification:Notification) {
+        self.expectation?.fulfill()
+        //試しに取得した情報を表示してみる
+        debugPrint(self.dao.array[10].name)
     }
     
 //    func testPerformanceExample() {

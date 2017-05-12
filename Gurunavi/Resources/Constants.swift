@@ -27,9 +27,9 @@ struct Constants {
         static let imageURL = "imageURL"
     }
     
-//    struct Path {
-//        static let Documents = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
-//        static let Tmp = NSTemporaryDirectory()
-//    }
+    struct NotificationName {
+        static let didReceiveRestaurantInfo = "didReceiveRestaurantInfo"
+        
+    }
     
 }
