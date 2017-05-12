@@ -40,6 +40,14 @@
 		1F7622AF1EC445FE00AE9F4C /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7622AE1EC445FE00AE9F4C /* JSONParser.swift */; };
 		1F7622B01EC445FE00AE9F4C /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7622AE1EC445FE00AE9F4C /* JSONParser.swift */; };
 		1F9C4E471EC540EF008D7AB2 /* Pods_GurunaviTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9C4E441EC540EF008D7AB2 /* Pods_GurunaviTests.framework */; };
+		1F9C4E491EC58429008D7AB2 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9C4E481EC58429008D7AB2 /* Restaurant.swift */; };
+		1F9C4E4A1EC58429008D7AB2 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9C4E481EC58429008D7AB2 /* Restaurant.swift */; };
+		1F9C4E4C1EC596C0008D7AB2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9C4E4B1EC596C0008D7AB2 /* Constants.swift */; };
+		1F9C4E4D1EC596C0008D7AB2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9C4E4B1EC596C0008D7AB2 /* Constants.swift */; };
+		1F9C4E4F1EC59E01008D7AB2 /* restaurant.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F9C4E4E1EC59E01008D7AB2 /* restaurant.json */; };
+		1F9C4E501EC59E01008D7AB2 /* restaurant.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F9C4E4E1EC59E01008D7AB2 /* restaurant.json */; };
+		1F9C4E521EC59FA5008D7AB2 /* FileOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9C4E511EC59FA5008D7AB2 /* FileOrganizer.swift */; };
+		1F9C4E531EC59FA5008D7AB2 /* FileOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9C4E511EC59FA5008D7AB2 /* FileOrganizer.swift */; };
 		A86BF54C4BE5BD6B163DA7BF /* Pods_Gurunavi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C19E70E983A20C95AEC3D2 /* Pods_Gurunavi.framework */; };
 		D8D42E81C0C9357C90BF48DE /* Pods_GurunaviTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A6DCDB131C38820CB51916 /* Pods_GurunaviTests.framework */; };
 /* End PBXBuildFile section */
@@ -83,6 +91,10 @@
 		1F9C4E421EC540EF008D7AB2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/Gurunavi-bxysdrvnfspdtzglqrkkzyoovuzd/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		1F9C4E431EC540EF008D7AB2 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = "../../../Library/Developer/Xcode/DerivedData/Gurunavi-bxysdrvnfspdtzglqrkkzyoovuzd/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework"; sourceTree = "<group>"; };
 		1F9C4E441EC540EF008D7AB2 /* Pods_GurunaviTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_GurunaviTests.framework; path = "../../../Library/Developer/Xcode/DerivedData/Gurunavi-bxysdrvnfspdtzglqrkkzyoovuzd/Build/Products/Debug-iphonesimulator/Pods_GurunaviTests.framework"; sourceTree = "<group>"; };
+		1F9C4E481EC58429008D7AB2 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		1F9C4E4B1EC596C0008D7AB2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1F9C4E4E1EC59E01008D7AB2 /* restaurant.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restaurant.json; sourceTree = "<group>"; };
+		1F9C4E511EC59FA5008D7AB2 /* FileOrganizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileOrganizer.swift; sourceTree = "<group>"; };
 		38A6DCDB131C38820CB51916 /* Pods_GurunaviTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GurunaviTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9374DD8ABF32E681CF902222 /* Pods-GurunaviTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GurunaviTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GurunaviTests/Pods-GurunaviTests.debug.xcconfig"; sourceTree = "<group>"; };
 		98C19E70E983A20C95AEC3D2 /* Pods_Gurunavi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gurunavi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,9 +186,12 @@
 		106C2EF31EC34C4100EC22C6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1F9C4E4E1EC59E01008D7AB2 /* restaurant.json */,
 				1F7622A81EC40F0A00AE9F4C /* area.json */,
 				106C2EC01EC3497500EC22C6 /* Assets.xcassets */,
 				106C2EC51EC3497500EC22C6 /* Info.plist */,
+				1F9C4E4B1EC596C0008D7AB2 /* Constants.swift */,
+				1F9C4E511EC59FA5008D7AB2 /* FileOrganizer.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -186,6 +201,7 @@
 			children = (
 				106C2F001EC34FF600EC22C6 /* Connection */,
 				106C2EFF1EC34FE700EC22C6 /* DataSource */,
+				1F9C4E481EC58429008D7AB2 /* Restaurant.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -345,6 +361,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F9C4E4F1EC59E01008D7AB2 /* restaurant.json in Resources */,
 				106C2EC41EC3497500EC22C6 /* LaunchScreen.storyboard in Resources */,
 				106C2EC11EC3497500EC22C6 /* Assets.xcassets in Resources */,
 				106C2EE31EC34AA700EC22C6 /* RestaurantTableViewCell.xib in Resources */,
@@ -360,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				106C2EE41EC34AA700EC22C6 /* RestaurantTableViewCell.xib in Resources */,
+				1F9C4E501EC59E01008D7AB2 /* restaurant.json in Resources */,
 				106C2EF01EC34BC300EC22C6 /* RestaurantsTableViewController.xib in Resources */,
 				1F7622AA1EC40F0A00AE9F4C /* area.json in Resources */,
 				106C2EDE1EC34A8500EC22C6 /* AreaTableViewCell.xib in Resources */,
@@ -469,11 +487,14 @@
 				106C2EE61EC34B1A00EC22C6 /* GurunaviFetcher.swift in Sources */,
 				106C2EE11EC34AA700EC22C6 /* RestaurantTableViewCell.swift in Sources */,
 				106C2EE91EC34B7000EC22C6 /* GurunaviConnector.swift in Sources */,
+				1F9C4E521EC59FA5008D7AB2 /* FileOrganizer.swift in Sources */,
 				1F7622AF1EC445FE00AE9F4C /* JSONParser.swift in Sources */,
 				106C2EF61EC34DC000EC22C6 /* AreaDataSource.swift in Sources */,
 				106C2EF91EC34E0900EC22C6 /* RestaurantsDataSource.swift in Sources */,
 				106C2EFC1EC34E2F00EC22C6 /* DaoRestaurants.swift in Sources */,
+				1F9C4E4C1EC596C0008D7AB2 /* Constants.swift in Sources */,
 				106C2EBC1EC3497500EC22C6 /* AreaViewController.swift in Sources */,
+				1F9C4E491EC58429008D7AB2 /* Restaurant.swift in Sources */,
 				106C2EDB1EC34A8500EC22C6 /* AreaTableViewCell.swift in Sources */,
 				106C2EBA1EC3497500EC22C6 /* AppDelegate.swift in Sources */,
 				106C2EED1EC34BC300EC22C6 /* RestaurantsTableViewController.swift in Sources */,
@@ -484,6 +505,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F9C4E4A1EC58429008D7AB2 /* Restaurant.swift in Sources */,
 				106C2EDC1EC34A8500EC22C6 /* AreaTableViewCell.swift in Sources */,
 				106C2EE21EC34AA700EC22C6 /* RestaurantTableViewCell.swift in Sources */,
 				106C2EF71EC34DC000EC22C6 /* AreaDataSource.swift in Sources */,
@@ -491,9 +513,11 @@
 				106C2EE71EC34B1A00EC22C6 /* GurunaviFetcher.swift in Sources */,
 				106C2EFA1EC34E0900EC22C6 /* RestaurantsDataSource.swift in Sources */,
 				1F7622B01EC445FE00AE9F4C /* JSONParser.swift in Sources */,
+				1F9C4E531EC59FA5008D7AB2 /* FileOrganizer.swift in Sources */,
 				106C2EFD1EC34E2F00EC22C6 /* DaoRestaurants.swift in Sources */,
 				106C2EEA1EC34B7000EC22C6 /* GurunaviConnector.swift in Sources */,
 				106C2ECF1EC3497500EC22C6 /* GurunaviTests.swift in Sources */,
+				1F9C4E4D1EC596C0008D7AB2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
