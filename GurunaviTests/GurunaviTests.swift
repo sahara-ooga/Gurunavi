@@ -59,9 +59,9 @@ class GurunaviTests: XCTestCase {
     }
     
     func testGenerateRestaurantModel() {
-        //単一のお店情報のJSONファイルを取ってくる
+        //プロジェクト内に用意した、単一のお店情報のJSONファイルを取ってくる
+        //let restaurantJSON = "restaurant".json() でも取得できる
         let restaurantJSONData = FileOrganizer.open(json: "restaurant")
-        //let jsonfile = "restaurant".json()
         
         //モデルをJSONファイルから生成してプロパティの値を比較する
         let restaurant = Restaurant(json: restaurantJSONData)
@@ -72,7 +72,6 @@ class GurunaviTests: XCTestCase {
         XCTAssertEqual(restaurant.telNum,"050-3462-6007")
         XCTAssertEqual(restaurant.budget,"3000")
         XCTAssertEqual(restaurant.imageURL,"https://uds.gnst.jp/rest/img/b101sy2y0000/t_0000.jpg")
-
     }
     
 //    func testPerformanceExample() {
