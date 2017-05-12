@@ -37,9 +37,9 @@
 		106C2EFD1EC34E2F00EC22C6 /* DaoRestaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106C2EFB1EC34E2F00EC22C6 /* DaoRestaurants.swift */; };
 		1F7622A91EC40F0A00AE9F4C /* area.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F7622A81EC40F0A00AE9F4C /* area.json */; };
 		1F7622AA1EC40F0A00AE9F4C /* area.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F7622A81EC40F0A00AE9F4C /* area.json */; };
-		1F7622AC1EC4116D00AE9F4C /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7622AB1EC4116D00AE9F4C /* SwiftyJSON.framework */; };
 		1F7622AF1EC445FE00AE9F4C /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7622AE1EC445FE00AE9F4C /* JSONParser.swift */; };
 		1F7622B01EC445FE00AE9F4C /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7622AE1EC445FE00AE9F4C /* JSONParser.swift */; };
+		1F9C4E471EC540EF008D7AB2 /* Pods_GurunaviTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9C4E441EC540EF008D7AB2 /* Pods_GurunaviTests.framework */; };
 		A86BF54C4BE5BD6B163DA7BF /* Pods_Gurunavi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C19E70E983A20C95AEC3D2 /* Pods_Gurunavi.framework */; };
 		D8D42E81C0C9357C90BF48DE /* Pods_GurunaviTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A6DCDB131C38820CB51916 /* Pods_GurunaviTests.framework */; };
 /* End PBXBuildFile section */
@@ -80,6 +80,9 @@
 		1F7622A81EC40F0A00AE9F4C /* area.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = area.json; sourceTree = "<group>"; };
 		1F7622AB1EC4116D00AE9F4C /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Release-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		1F7622AE1EC445FE00AE9F4C /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		1F9C4E421EC540EF008D7AB2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/Gurunavi-bxysdrvnfspdtzglqrkkzyoovuzd/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		1F9C4E431EC540EF008D7AB2 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = "../../../Library/Developer/Xcode/DerivedData/Gurunavi-bxysdrvnfspdtzglqrkkzyoovuzd/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework"; sourceTree = "<group>"; };
+		1F9C4E441EC540EF008D7AB2 /* Pods_GurunaviTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_GurunaviTests.framework; path = "../../../Library/Developer/Xcode/DerivedData/Gurunavi-bxysdrvnfspdtzglqrkkzyoovuzd/Build/Products/Debug-iphonesimulator/Pods_GurunaviTests.framework"; sourceTree = "<group>"; };
 		38A6DCDB131C38820CB51916 /* Pods_GurunaviTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GurunaviTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9374DD8ABF32E681CF902222 /* Pods-GurunaviTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GurunaviTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GurunaviTests/Pods-GurunaviTests.debug.xcconfig"; sourceTree = "<group>"; };
 		98C19E70E983A20C95AEC3D2 /* Pods_Gurunavi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gurunavi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F7622AC1EC4116D00AE9F4C /* SwiftyJSON.framework in Frameworks */,
+				1F9C4E471EC540EF008D7AB2 /* Pods_GurunaviTests.framework in Frameworks */,
 				A86BF54C4BE5BD6B163DA7BF /* Pods_Gurunavi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,6 +233,9 @@
 		4130DA471DF8FB066B1842FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F9C4E421EC540EF008D7AB2 /* Alamofire.framework */,
+				1F9C4E431EC540EF008D7AB2 /* AlamofireImage.framework */,
+				1F9C4E441EC540EF008D7AB2 /* Pods_GurunaviTests.framework */,
 				1F7622AB1EC4116D00AE9F4C /* SwiftyJSON.framework */,
 				98C19E70E983A20C95AEC3D2 /* Pods_Gurunavi.framework */,
 				38A6DCDB131C38820CB51916 /* Pods_GurunaviTests.framework */,

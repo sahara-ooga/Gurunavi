@@ -44,11 +44,21 @@ class GurunaviTests: XCTestCase {
         XCTAssertTrue(array.contains("銀座・有楽町・築地"))
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testFetchGotandaInfo() {
+        let url = "https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=1733cc471db89a76e4f199c411ec7673&format=json&areacode_l=AREAL2169&hit_per_page=50&offset_page=1"
+        let _: XCTestExpectation? =
+            self.expectation(description: "download json")
+        
+        let fetcher = GurunaviFetcher()
+        fetcher.startToFetchJSON(url: url)
+        
+        waitForExpectations(timeout: 10.0, handler:nil)
     }
+//    func testPerformanceExample() {
+//        // This is an example of a performance test case.
+//        self.measure {
+//            // Put the code you want to measure the time of here.
+//        }
+//    }
     
 }
