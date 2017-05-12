@@ -12,6 +12,7 @@ import Alamofire
 struct GurunaviFetcher {
     var delegate:GurunaviFetcherDelegate?
     
+    //TODO: コメントアウトの処理
     func startToFetchJSON(url:URLConvertible){
         Alamofire.request(url).responseJSON { response in
 //            debugPrint(response.request ?? "no request")  // original URL request
