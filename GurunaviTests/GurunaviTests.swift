@@ -44,9 +44,10 @@ class GurunaviTests: XCTestCase {
         XCTAssertTrue(array.contains("銀座・有楽町・築地"))
     }
     
+    /*
     func testFetchGotandaInfo() {
         //五反田近辺エリア・50件・最初の50件で検索
-        let url = "https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=1733cc471db89a76e4f199c411ec7673&format=json&areacode_l=AREAL2169&hit_per_page=50&offset_page=1"
+        let url = "https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=fcd458b7f390f29fdf4d5d04d4c60e42&format=json&areacode_l=AREAL2169&hit_per_page=50&offset_page=1"
         let _: XCTestExpectation? =
             self.expectation(description: "download json")
         
@@ -57,6 +58,7 @@ class GurunaviTests: XCTestCase {
         
         waitForExpectations(timeout: 10.0, handler:nil)
     }
+    */
     
     func testGenerateRestaurantModel() {
         //プロジェクト内に用意した、単一のお店情報のJSONファイルを取ってくる
@@ -64,7 +66,7 @@ class GurunaviTests: XCTestCase {
         let restaurantJSONData = FileOrganizer.open(json: "restaurant")
         
         //モデルをJSONファイルから生成してプロパティの値を比較する
-        let restaurant = Restaurant(json: restaurantJSONData)
+        let restaurant = Restaurant(data: restaurantJSONData)
         XCTAssertEqual(restaurant.name,"隠れ家個室居酒屋 鳥の利久 八重洲口店")
         XCTAssertEqual(restaurant.nearestStation,"ＪＲ東京駅")
         XCTAssertEqual(restaurant.walkDuration,"徒歩3分")
@@ -74,6 +76,23 @@ class GurunaviTests: XCTestCase {
         XCTAssertEqual(restaurant.imageURL,"https://uds.gnst.jp/rest/img/b101sy2y0000/t_0000.jpg")
     }
     
+    func testConnector() {
+        
+        let url = "https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=fcd458b7f390f29fdf4d5d04d4c60e42&format=json&areacode_l=AREAL2169&hit_per_page=50&offset_page=1"
+
+        let fetchExpectation = self.expectation(description: "fetch json")
+
+        let mock = ConnectorDelegateMock()
+        mock.completionHandler = {fetchExpectation.fulfill()}
+        
+        var gurunaviConnector = GurunaviConnector()
+        gurunaviConnector.delegate = mock
+        gurunaviConnector.fetchGurunaviJSON(url: url)
+        
+        waitForExpectations(timeout: 30.0,
+                            handler:nil)
+    }
+    
 //    func testPerformanceExample() {
 //        // This is an example of a performance test case.
 //        self.measure {
@@ -81,4 +100,33 @@ class GurunaviTests: XCTestCase {
 //        }
 //    }
     
+}
+
+class ConnectorDelegateMock:GurunaviConnectorDelegate{
+    
+    var array = [Restaurant]()
+    var completionHandler:()->Void
+    
+    init() {
+        array = [Restaurant]()
+        completionHandler = {Void in return}
+    }
+    
+    func gurunaviConnector(_ gurunaviConnector: GurunaviConnector, restaurantArray: [Restaurant]) {
+        self.array = restaurantArray
+        XCTAssertEqual(self.array.count, 50)
+        
+        //配列からランダムに選んだ1個が要素を持っているか調べる
+        let random = (Int)(arc4random_uniform(50))
+        let restaurant = self.array[random]
+        XCTAssertNotNil(restaurant.name)
+        XCTAssertNotNil(restaurant.nearestStation)
+        XCTAssertNotNil(restaurant.walkDuration)
+        XCTAssertNotNil(restaurant.address)
+        XCTAssertNotNil(restaurant.telNum)
+        XCTAssertNotNil(restaurant.budget)
+        XCTAssertNotNil(restaurant.imageURL)
+        
+        completionHandler()
+    }
 }

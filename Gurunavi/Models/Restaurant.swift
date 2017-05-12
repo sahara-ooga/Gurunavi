@@ -48,10 +48,13 @@ class Restaurant: NSObject {
     var budget : String!
     var imageURL : String?
     
-    convenience init(json:Any) {
+    convenience init(data:Data) {
+        let json = JSON(data)
+        self.init(json: json)
+    }
+    
+    convenience init(json:JSON) {
         var dictionary = [String:String]()
-        let json = JSON(json)
-        
         dictionary[Constants.JSONKey.name] = json[Constants.JSONKey.name].string ?? "noname"
         
         //最寄り駅は鉄道会社・駅名・出口名をあわせたもので表示する

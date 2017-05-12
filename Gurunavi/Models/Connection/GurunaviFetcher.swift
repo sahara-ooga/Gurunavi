@@ -27,7 +27,6 @@ struct GurunaviFetcher {
     }
     
     func manageResponseJSON(JSON:Any) {
-        //debugPrint(JSON)
         delegate?.gurunaviFetcher(self, responseJSON: JSON)
     }
 }
