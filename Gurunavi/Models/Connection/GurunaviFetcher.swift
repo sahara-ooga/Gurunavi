@@ -15,11 +15,6 @@ struct GurunaviFetcher {
     //TODO: コメントアウトの処理
     func startToFetchJSON(url:URLConvertible){
         Alamofire.request(url).responseJSON { response in
-//            debugPrint(response.request ?? "no request")  // original URL request
-//            debugPrint(response.response ?? "no response") // HTTP URL response
-//            debugPrint(response.data ?? "no data")     // server data
-//            debugPrint(response.result)   // result of response serialization
-            
             if let JSON = response.result.value {
                 self.manageResponseJSON(JSON: JSON)
             }

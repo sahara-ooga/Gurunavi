@@ -116,8 +116,6 @@ class GurunaviTests: XCTestCase {
     
     func daoDidReceiveInfo(notification:Notification) {
         self.expectation?.fulfill()
-        //試しに取得した情報を表示してみる
-        debugPrint(self.dao.array[10].name)
     }
     
 //    func testPerformanceExample() {
