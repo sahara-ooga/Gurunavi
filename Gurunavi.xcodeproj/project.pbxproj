@@ -88,6 +88,7 @@
 		106C2EF81EC34E0900EC22C6 /* RestaurantsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantsDataSource.swift; sourceTree = "<group>"; };
 		106C2EFB1EC34E2F00EC22C6 /* DaoRestaurants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaoRestaurants.swift; sourceTree = "<group>"; };
 		136B441418359F32094170BC /* Pods-Gurunavi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gurunavi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gurunavi/Pods-Gurunavi.debug.xcconfig"; sourceTree = "<group>"; };
+		1F5110BE1EC99367004FAD2E /* Keys.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Keys.framework; path = "Pods/../build/Debug-iphoneos/Keys/Keys.framework"; sourceTree = "<group>"; };
 		1F7622A81EC40F0A00AE9F4C /* area.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = area.json; sourceTree = "<group>"; };
 		1F7622AB1EC4116D00AE9F4C /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Release-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		1F7622AE1EC445FE00AE9F4C /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
@@ -253,6 +254,7 @@
 		4130DA471DF8FB066B1842FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F5110BE1EC99367004FAD2E /* Keys.framework */,
 				1F9C4E421EC540EF008D7AB2 /* Alamofire.framework */,
 				1F9C4E431EC540EF008D7AB2 /* AlamofireImage.framework */,
 				1F9C4E441EC540EF008D7AB2 /* Pods_GurunaviTests.framework */,
@@ -661,6 +663,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Release-iphoneos/SwiftyJSON",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Keys",
 				);
 				INFOPLIST_FILE = Gurunavi/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -679,6 +682,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Release-iphoneos/SwiftyJSON",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Keys",
 				);
 				INFOPLIST_FILE = Gurunavi/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

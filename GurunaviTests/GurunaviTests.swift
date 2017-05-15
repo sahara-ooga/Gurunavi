@@ -7,11 +7,11 @@
 //
 
 import XCTest
+import Keys
+
 @testable import Gurunavi
 
 class GurunaviTests: XCTestCase {
-    
-    let url = "https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=fcd458b7f390f29fdf4d5d04d4c60e42&format=json&areacode_l=AREAL2169&hit_per_page=50&offset_page=1"
     
     let dao:DaoRestaurants = DaoRestaurants.sharedInstance
     
@@ -86,7 +86,7 @@ class GurunaviTests: XCTestCase {
     
     func testConnectorToFetch() {
         
-        let url = "https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=fcd458b7f390f29fdf4d5d04d4c60e42&format=json&areacode_l=AREAL2169&hit_per_page=50&offset_page=1"
+        //let url = "https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=fcd458b7f390f29fdf4d5d04d4c60e42&format=json&areacode_l=AREAL2169&hit_per_page=50&offset_page=1"
 
         let fetchExpectation = self.expectation(description: "fetch json")
 
@@ -95,7 +95,7 @@ class GurunaviTests: XCTestCase {
         
         var gurunaviConnector = GurunaviConnector()
         gurunaviConnector.delegate = mock
-        gurunaviConnector.fetchGurunaviJSON(url: url)
+        gurunaviConnector.fetchGurunaviJSON(url: url())
         
         waitForExpectations(timeout: 30.0,
                             handler:nil)
@@ -108,7 +108,7 @@ class GurunaviTests: XCTestCase {
                                                name: NSNotification.Name(rawValue: Constants.NotificationName.didReceiveRestaurantInfo),
                                                object: nil)
         
-        dao.fetchRestaurantInfo(url: url)
+        dao.fetchRestaurantInfo(url: url())
         
         waitForExpectations(timeout: 30.0,
                             handler:nil)
@@ -127,6 +127,12 @@ class GurunaviTests: XCTestCase {
 //        }
 //    }
     
+    func url() -> String {
+        let keys = GurunaviKeys()
+        
+        return "https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=" + keys.secretKeyID +  "&format=json&areacode_l=AREAL2169&hit_per_page=50&offset_page=1"
+    }
+
 }
 
 class ConnectorDelegateMock:GurunaviConnectorDelegate{
@@ -156,4 +162,5 @@ class ConnectorDelegateMock:GurunaviConnectorDelegate{
         
         completionHandler()
     }
+    
 }

@@ -19,3 +19,9 @@ target 'Gurunavi' do
   end
 
 end
+
+plugin 'cocoapods-keys', {
+  :project => "Gurunavi",
+  :keys => [
+    "secretKeyID"
+]}
