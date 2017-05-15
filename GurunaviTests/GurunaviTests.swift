@@ -52,21 +52,23 @@ class GurunaviTests: XCTestCase {
         XCTAssertTrue(array.contains("銀座・有楽町・築地"))
     }
     
-    /*
+    
     func testFetchGotandaInfo() {
         //五反田近辺エリア・50件・最初の50件で検索
-        let url = "https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=fcd458b7f390f29fdf4d5d04d4c60e42&format=json&areacode_l=AREAL2169&hit_per_page=50&offset_page=1"
-        let _: XCTestExpectation? =
+        let downloadJSONExpectation: XCTestExpectation? =
             self.expectation(description: "download json")
         
         //FIXME:非同期処理のテストを書く
-        //値を突き合わせる・空でないことを確かめる
-        let fetcher = GurunaviFetcher()
-        fetcher.startToFetchJSON(url: url)
+        let mock = GurunaviFetcherDelegateMock()
+        mock.expectation = downloadJSONExpectation
         
-        waitForExpectations(timeout: 10.0, handler:nil)
+        //値を突き合わせる・空でないことを確かめる
+        var fetcher = GurunaviFetcher()
+        fetcher.delegate = mock
+        fetcher.startToFetchJSON(url: url())
+        
+        waitForExpectations(timeout: 20.0, handler:nil)
     }
-    */
     
     func testGenerateRestaurantModel() {
         //プロジェクト内に用意した、単一のお店情報のJSONファイルを取ってくる
@@ -85,8 +87,6 @@ class GurunaviTests: XCTestCase {
     }
     
     func testConnectorToFetch() {
-        
-        //let url = "https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=fcd458b7f390f29fdf4d5d04d4c60e42&format=json&areacode_l=AREAL2169&hit_per_page=50&offset_page=1"
 
         let fetchExpectation = self.expectation(description: "fetch json")
 

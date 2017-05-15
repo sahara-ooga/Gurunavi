@@ -31,17 +31,8 @@ struct GurunaviConnector :GurunaviFetcherDelegate{
         //各JSON毎にモデルクラスを生成
         let json = JSON(responseJSON)
         let json2 = json["rest"]
-        //debugPrint(json2)
+
         json2.forEach{(_,json3) in
-//            if index == "3"{
-//                
-//                json.forEach{(_,json) in
-//                    array.append(Restaurant(json: json))
-//                }
-//                
-//            }
-            //debugPrint("json3 is \(json3)")
-            //NOTE:ここまでは取れている
             array.append(Restaurant(json: json3))
         }
         

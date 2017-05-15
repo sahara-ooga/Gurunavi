@@ -24,7 +24,7 @@ class DaoRestaurants: NSObject,GurunaviConnectorDelegate {
         self.array = restaurantArray
         
         //TODO:読み込みの処理の終了
-        //TODO:VCの表示処理など、次の処理へのトリガー
+        //VCの表示処理など、次の処理へのトリガー
         let notification = Notification(name: Notification.Name(rawValue: Constants.NotificationName.didReceiveRestaurantInfo),
                                         object: self,
                                         userInfo: nil)
