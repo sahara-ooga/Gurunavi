@@ -17,6 +17,7 @@ class RestaurantTableViewCellTests: XCTestCase {
     var cell: RestaurantTableViewCell!
     let rest = Restaurant(data:(FileOrganizer.open(json:"restaurant")))
 
+    //MARK: setup,tearDown
     override func setUp() {
         super.setUp()
 
@@ -38,8 +39,6 @@ class RestaurantTableViewCellTests: XCTestCase {
                            forCellReuseIdentifier:String(describing: RestaurantTableViewCell.self)
         )
         
-//        viewController.tableView.register(UINib(nibName: String(describing: RestaurantTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: RestaurantTableViewCell.self))
-
         cell = tableView?.dequeueReusableCell(
             withIdentifier: String(describing: RestaurantTableViewCell.self),
             for: IndexPath(row: 0, section: 0)) as! RestaurantTableViewCell
@@ -49,6 +48,7 @@ class RestaurantTableViewCellTests: XCTestCase {
         super.tearDown()
     }
 
+    //MARK:Test case
     func testNearestStationLabel() {
         var array = [UILabel]()
         
@@ -66,7 +66,6 @@ class RestaurantTableViewCellTests: XCTestCase {
     func testAddressLabel() {
         var array = [UILabel]()
         
-        //NOTE:cellのラベルがnilなので、各ラベルに生成したラベルを突っ込んでやる必要がある
         for _ in 1...5 {
             let label = UILabel(frame: CGRect(x: 0, y: 0, width: 3, height: 3))
             array.append(label)
@@ -80,7 +79,6 @@ class RestaurantTableViewCellTests: XCTestCase {
     func testTelNumLabel() {
         var array = [UILabel]()
         
-        //NOTE:cellのラベルがnilなので、各ラベルに生成したラベルを突っ込んでやる必要がある
         for _ in 1...5 {
             let label = UILabel(frame: CGRect(x: 0, y: 0, width: 3, height: 3))
             array.append(label)
@@ -95,7 +93,6 @@ class RestaurantTableViewCellTests: XCTestCase {
     func testSetBudgetNameLabel() {
         var array = [UILabel]()
         
-        //NOTE:cellのラベルがnilなので、各ラベルに生成したラベルを突っ込んでやる必要がある
         for _ in 1...5 {
             let label = UILabel(frame: CGRect(x: 0, y: 0, width: 3, height: 3))
             array.append(label)
