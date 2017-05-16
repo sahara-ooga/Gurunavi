@@ -28,11 +28,13 @@ class RestaurantsDataSource: NSObject,UITableViewDataSource {
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-     let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RestaurantTableViewCell.self), for: indexPath) as? RestaurantTableViewCell
+     let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RestaurantTableViewCell.self),
+                                              for: indexPath) as? RestaurantTableViewCell
      
      cell?.setAppearance(restaurant: DaoRestaurants.sharedInstance.array[indexPath.row])
         
      return cell!
+        
     }
     
 }
