@@ -17,7 +17,7 @@
             <rect key="frame" x="0.0" y="0.0" width="556" height="527"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="556" height="526.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="556" height="527"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="五反田　個室居酒屋　竹取の音色　五反田駅前店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHI-SY-cIG">
@@ -75,6 +75,14 @@
                     <constraint firstItem="5ly-OP-ZMa" firstAttribute="top" secondItem="QHI-SY-cIG" secondAttribute="bottom" constant="10" id="wPX-JZ-qet"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="f8q-bc-Ap3" id="MGv-nZ-eSd"/>
+                <outlet property="budgetLabel" destination="oiq-vq-Jme" id="8Ex-XG-5cX"/>
+                <outlet property="nameLabel" destination="QHI-SY-cIG" id="zCi-0b-kFM"/>
+                <outlet property="nearestStationLabel" destination="2te-WM-krM" id="Ozc-ek-7xB"/>
+                <outlet property="storeImageView" destination="5ly-OP-ZMa" id="o9L-XF-ArK"/>
+                <outlet property="telNumLabel" destination="ykb-nX-K5D" id="yJb-kQ-sKz"/>
+            </connections>
             <point key="canvasLocation" x="140" y="78.5"/>
         </tableViewCell>
     </objects>

@@ -10,6 +10,14 @@ import UIKit
 
 class RestaurantTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var nearestStationLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var telNumLabel: UILabel!
+    @IBOutlet weak var budgetLabel: UILabel!
+    
+    @IBOutlet weak var storeImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +27,38 @@ class RestaurantTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setAppearance(restaurant:Restaurant) {
+        //ラベルの設定
+        nameLabel.text = restaurant.name
+        nearestStationLabel.text = restaurant.nearestStation + " " + restaurant.walkDuration
+        addressLabel.text = restaurant.address
+        telNumLabel.text = restaurant.telNum
+        budgetLabel.text = "¥" + restaurant.budget.insertComma()!
+        
+        //FIXME: 画像のダウンロード・表示
+    }
+    
+}
+
+extension String{
+    func insertComma()->String?{
+        let int = Int(self)
+        
+        guard let intValue = int else{
+            return nil
+        }
+        
+        let num = NSNumber(value: intValue)
+        
+        let formatter = NumberFormatter()
+        formatter.numberStyle = NumberFormatter.Style.decimal
+        formatter.groupingSeparator = ","
+        formatter.groupingSize = 3
+        
+        return formatter.string(from: num)
+        
     }
     
 }

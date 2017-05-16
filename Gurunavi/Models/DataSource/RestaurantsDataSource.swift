@@ -13,24 +13,26 @@ class RestaurantsDataSource: NSObject,UITableViewDataSource {
     // MARK: - Table view data source
     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
     
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        let dao = DaoRestaurants.sharedInstance
+        
+        return dao.array.count
     }
     
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-     let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+     let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RestaurantTableViewCell.self), for: indexPath) as? RestaurantTableViewCell
      
-     // Configure the cell...
-     
-     return cell
+     cell?.setAppearance(restaurant: DaoRestaurants.sharedInstance.array[indexPath.row])
+        
+     return cell!
     }
     
 }

@@ -9,6 +9,7 @@
 import UIKit
 
 class RestaurantsViewController: UIViewController {
+    @IBOutlet weak var tableView: UITableView!
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,9 @@ class RestaurantsViewController: UIViewController {
                                                selector: #selector(whenDaoReceiveRestaurantInfo(notification:)),
                                                name: NSNotification.Name(rawValue: Constants.NotificationName.didReceiveRestaurantInfo),
                                                object: nil)
+        
+        //self.tableView.dataSource = RestaurantsDataSource()
+        //self.tableView.delegate = self
     }
 
     override func viewDidDisappear(_ animated: Bool) {
@@ -98,7 +102,11 @@ class RestaurantsViewController: UIViewController {
 // MARK: - Notification
 extension RestaurantsViewController {
     func whenDaoReceiveRestaurantInfo(notification:Notification) {
-        //表示の更新
-        //self.tableView.reloadData()
+        //Daoがモデルオブジェクトを取得完了したので、表示の更新
+        self.tableView.reloadData()
     }
+}
+
+extension RestaurantsViewController:UITableViewDelegate{
+    
 }
