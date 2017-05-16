@@ -152,10 +152,10 @@
 		106C2EB81EC3497500EC22C6 /* Gurunavi */ = {
 			isa = PBXGroup;
 			children = (
+				106C2EF21EC34C3400EC22C6 /* View */,
 				106C2EF11EC34C1300EC22C6 /* Controller */,
 				106C2EF41EC34C5200EC22C6 /* Models */,
 				106C2EF31EC34C4100EC22C6 /* Resources */,
-				106C2EF21EC34C3400EC22C6 /* View */,
 			);
 			path = Gurunavi;
 			sourceTree = "<group>";
