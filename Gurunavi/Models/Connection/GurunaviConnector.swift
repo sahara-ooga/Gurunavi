@@ -33,7 +33,7 @@ struct GurunaviConnector :GurunaviFetcherDelegate{
         let json2 = json["rest"]
 
         json2.forEach{(_,json3) in
-            array.append(Restaurant(json: json3))
+            array.append(Restaurant(json3))
         }
         
         //デリゲート先にモデルクラスの配列を渡す

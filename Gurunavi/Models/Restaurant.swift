@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class Restaurant: NSObject {
+class Restaurant{
     //NOTE:参考のため、JSONから生成したプロパティを残しておく
 //    var attributes : @attribute!
 //    var access : Acces!
@@ -40,20 +40,20 @@ class Restaurant: NSObject {
 //    var url : String!
 //    var urlMobile : String!
     
-    var name : String!
-    var nearestStation : String!
-    var walkDuration : String!
-    var address : String!
-    var telNum : String!
-    var budget : String!
+    var name : String
+    var nearestStation : String
+    var walkDuration : String
+    var address : String
+    var telNum : String
+    var budget : String
     var imageURL : String?
     
-    convenience init(data:Data) {
+    convenience init(_ data:Data) {
         let json = JSON(data)
-        self.init(json: json)
+        self.init(json)
     }
     
-    convenience init(json:JSON) {
+    convenience init(_ json:JSON) {
         var dictionary = [String:String]()
         dictionary[Constants.JSONKey.name] = json[Constants.JSONKey.name].string ?? "noname"
         
@@ -73,16 +73,16 @@ class Restaurant: NSObject {
         dictionary[Constants.JSONKey.imageURL] = json[Constants.JSONKey.image_url][Constants.JSONKey.shop_image1].string ?? ""
         
         //辞書から生成
-        self.init(fromDictionary: dictionary)
+        self.init(dictionary)
     }
     
-    init(fromDictionary dictionary: [String:String]){
-        self.name = dictionary[Constants.JSONKey.name]
-        self.nearestStation = dictionary[Constants.JSONKey.nearestStation]
-        self.walkDuration = dictionary[Constants.JSONKey.walk]
-        self.address = dictionary[Constants.JSONKey.address]
-        self.telNum = dictionary[Constants.JSONKey.tel]
-        self.budget = dictionary[Constants.JSONKey.budget]
+    init(_ dictionary: [String:String]){
+        self.name = dictionary[Constants.JSONKey.name] ?? "noname"
+        self.nearestStation = dictionary[Constants.JSONKey.nearestStation] ?? ""
+        self.walkDuration = dictionary[Constants.JSONKey.walk] ?? ""
+        self.address = dictionary[Constants.JSONKey.address] ?? ""
+        self.telNum = dictionary[Constants.JSONKey.tel] ?? ""
+        self.budget = dictionary[Constants.JSONKey.budget] ?? ""
         self.imageURL = dictionary[Constants.JSONKey.imageURL]
     }
     
