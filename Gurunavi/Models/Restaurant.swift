@@ -53,6 +53,9 @@ class Restaurant{
         self.init(json)
     }
     
+    /// JSONデータをSwiftyJSONで辞書に変換して、指定イニシャライザに渡す
+    ///
+    /// - Parameter json: ぐるなびAPIで取得したエリアごとの飲食店情報
     convenience init(_ json:JSON) {
         var dictionary = [String:String]()
         dictionary[Constants.JSONKey.name] = json[Constants.JSONKey.name].string ?? "noname"
