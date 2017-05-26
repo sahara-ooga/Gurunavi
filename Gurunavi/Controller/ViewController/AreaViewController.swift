@@ -49,6 +49,13 @@ extension AreaViewController:UITableViewDelegate{
 }
 
 extension AreaViewController{
+    
+    func daoDidReceiveInfo(notification:Notification) {
+        //storyboardからVCを取りだして、配列を渡してNVでプッシュ
+        guard let restaurantsViewController = UIStoryboard(name: String(describing: RestaurantsViewController.self),
+                                          bundle: nil).instantiateInitialViewController() else { return }
+        
+        self.navigationController?.pushViewController(restaurantsViewController, animated: true)
     }
     
     func registerNibs() {
