@@ -76,7 +76,7 @@ class GurunaviTests: XCTestCase {
         let restaurantJSONData = FileOrganizer.open(json: "restaurant")
         
         //モデルをJSONファイルから生成してプロパティの値を比較する
-        let restaurant = Restaurant(data: restaurantJSONData)
+        let restaurant = Restaurant(restaurantJSONData)
         XCTAssertEqual(restaurant.name,"隠れ家個室居酒屋 鳥の利久 八重洲口店")
         XCTAssertEqual(restaurant.nearestStation,"ＪＲ東京駅")
         XCTAssertEqual(restaurant.walkDuration,"徒歩3分")

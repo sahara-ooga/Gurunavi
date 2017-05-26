@@ -21,7 +21,7 @@ class GurunaviFetcherDelegateMock: NSObject,GurunaviFetcherDelegate {
         let json = JSON(responseJSON)
         let json2 = json["rest"]
         json2.forEach{(_,json3) in
-            array.append(Restaurant(json: json3))
+            array.append(Restaurant(json3))
             //辞書に詰めるか？参照→Restaurantクラス
         }
         
