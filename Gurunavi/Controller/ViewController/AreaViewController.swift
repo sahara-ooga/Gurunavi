@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Keys
 
 class AreaViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-    
+    let dao:DaoRestaurants = DaoRestaurants.sharedInstance
+
     let areaDataSource = AreaDataSource()
     
     override func viewDidLoad() {
@@ -35,5 +37,18 @@ class AreaViewController: UIViewController {
 
 extension AreaViewController:UITableViewDelegate{
     //TODO:セルがタップされたときの処理
+    // セルタップ時に呼ばれる
+    func tableView(_ tableView: UITableView,
+                   didSelectRowAt indexPath: IndexPath) {
+        //TODO:もちろんエリアごとにURLを変更する必要あり
+        dao.fetchRestaurantInfo(url: url())
+    }
 }
 
+extension AreaViewController{
+    func url() -> String {
+        let keys = GurunaviKeys()
+        
+        return "https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=" + keys.secretKeyID +  "&format=json&areacode_l=AREAL2169&hit_per_page=50&offset_page=1"
+    }
+}
