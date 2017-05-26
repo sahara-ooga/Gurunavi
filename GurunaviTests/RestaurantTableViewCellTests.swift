@@ -15,7 +15,7 @@ class RestaurantTableViewCellTests: XCTestCase {
     var tableView: UITableView!
     let dataSource = FakeDataSource()
     var cell: RestaurantTableViewCell!
-    let rest = Restaurant(data:(FileOrganizer.open(json:"restaurant")))
+    let rest = Restaurant((FileOrganizer.open(json:"restaurant")))
 
     //MARK: setup,tearDown
     override func setUp() {
