@@ -33,3 +33,7 @@ class AreaViewController: UIViewController {
     }
 }
 
+extension AreaViewController:UITableViewDelegate{
+    //TODO:セルがタップされたときの処理
+}
+
