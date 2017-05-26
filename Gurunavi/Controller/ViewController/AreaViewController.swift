@@ -17,10 +17,7 @@ class AreaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        tableView.dataSource = areaDataSource
-        
-        registerNibs()
+        setUp()
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,11 +25,17 @@ class AreaViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func registerNibs() {
-        self.tableView.register(UINib.init(nibName: String(describing: AreaTableViewCell.self),
-                                           bundle: nil),
-                                forCellReuseIdentifier: String(describing: AreaTableViewCell.self))
+    func setUp(){
+        tableView.dataSource = areaDataSource
+
+        registerNibs()
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(daoDidReceiveInfo(notification:)),
+                                               name: NSNotification.Name(rawValue: Constants.NotificationName.didReceiveRestaurantInfo),
+                                               object: nil)
     }
+    
 }
 
 extension AreaViewController:UITableViewDelegate{
@@ -40,12 +43,20 @@ extension AreaViewController:UITableViewDelegate{
     // セルタップ時に呼ばれる
     func tableView(_ tableView: UITableView,
                    didSelectRowAt indexPath: IndexPath) {
-        //TODO:もちろんエリアごとにURLを変更する必要あり
+        //FIXME:もちろんエリアごとにURLを変更する必要あり
         dao.fetchRestaurantInfo(url: url())
     }
 }
 
 extension AreaViewController{
+    }
+    
+    func registerNibs() {
+        self.tableView.register(UINib.init(nibName: String(describing: AreaTableViewCell.self),
+                                           bundle: nil),
+                                forCellReuseIdentifier: String(describing: AreaTableViewCell.self))
+    }
+    
     func url() -> String {
         let keys = GurunaviKeys()
         
