@@ -123,6 +123,10 @@ class GurunaviTests: XCTestCase {
         
         return "https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=" + keys.secretKeyID +  "&format=json&areacode_l=AREAL2169&hit_per_page=50&offset_page=1"
     }
+    
+    func testGenerateClassNameString() {
+        XCTAssertEqual("RestaurantsViewController",String(describing: RestaurantsViewController.self))
+    }
 
 }
 
