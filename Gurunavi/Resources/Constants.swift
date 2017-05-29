@@ -33,6 +33,7 @@ struct Constants {
     }
     
     struct TableView {
+        //FIXME:セルの高さを動的に変える
         static let kHeightForRow:CGFloat = 400.0
         static let kNumberOfSection = 1
     }
