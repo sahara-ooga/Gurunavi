@@ -10,7 +10,7 @@ import UIKit
 
 class DaoRestaurants: NSObject,GurunaviConnectorDelegate {
 
-    var array = [Restaurant]()
+    var restaurantArray = [Restaurant]()
     static let sharedInstance = DaoRestaurants()
     
     func fetchRestaurantInfo(url:String) {
@@ -21,7 +21,7 @@ class DaoRestaurants: NSObject,GurunaviConnectorDelegate {
     
     func gurunaviConnector(_ gurunaviConnector: GurunaviConnector,
                            restaurantArray: [Restaurant]) {
-        self.array = restaurantArray
+        self.restaurantArray = restaurantArray
         
         //読み込みの処理の終了
         //VCの表示処理など、次の処理へのトリガー

@@ -9,6 +9,7 @@
 import UIKit
 
 class RestaurantsDataSource: NSObject,UITableViewDataSource {
+    var daoRestaurants = DaoRestaurants.sharedInstance
     
     // MARK: - Table view data source
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -18,9 +19,8 @@ class RestaurantsDataSource: NSObject,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
-        let dao = DaoRestaurants.sharedInstance
         
-        return dao.array.count
+        return daoRestaurants.restaurantArray.count
     }
     
     
@@ -30,7 +30,7 @@ class RestaurantsDataSource: NSObject,UITableViewDataSource {
      let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RestaurantTableViewCell.self),
                                               for: indexPath) as? RestaurantTableViewCell
      
-     cell?.setAppearance(restaurant: DaoRestaurants.sharedInstance.array[indexPath.row])
+     cell?.setAppearance(restaurant: daoRestaurants.restaurantArray[indexPath.row])
         
      return cell!
         
