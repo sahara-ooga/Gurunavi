@@ -36,6 +36,9 @@ class AreaViewController: UIViewController {
                                                object: nil)
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
 }
 
 extension AreaViewController:UITableViewDelegate{
