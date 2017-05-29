@@ -20,44 +20,44 @@
                 <rect key="frame" x="0.0" y="0.0" width="556" height="527"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="五反田　個室居酒屋　竹取の音色　五反田駅前店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHI-SY-cIG">
-                        <rect key="frame" x="8" y="8" width="484" height="22"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="五反田　個室居酒屋　竹取の音色　五反田駅前店" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHI-SY-cIG">
+                        <rect key="frame" x="8" y="8" width="540" height="22"/>
                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="22"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5ly-OP-ZMa">
-                        <rect key="frame" x="8" y="40" width="240" height="240"/>
+                        <rect key="frame" x="8" y="40" width="150" height="150"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="5ly-OP-ZMa" secondAttribute="height" multiplier="1:1" id="LYI-uX-YOq"/>
-                            <constraint firstAttribute="width" constant="240" id="Ppy-8Q-Abp"/>
+                            <constraint firstAttribute="width" constant="150" id="Ppy-8Q-Abp"/>
                         </constraints>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="V5T-1v-WIa">
-                        <rect key="frame" x="258" y="40" width="298" height="191"/>
+                        <rect key="frame" x="168" y="40" width="388" height="171"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="五反田駅 3分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2te-WM-krM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="五反田駅 3分" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2te-WM-krM">
                                 <rect key="frame" x="0.0" y="0.0" width="108" height="18"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8q-bc-Ap3">
-                                <rect key="frame" x="0.0" y="43" width="286" height="60"/>
+                                <rect key="frame" x="0.0" y="43" width="380" height="40"/>
                                 <string key="text">〒141-0031 東京都品川区西五反田2-7-8
 誠実ビル3F</string>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03-3490-0495" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykb-nX-K5D">
-                                <rect key="frame" x="0.0" y="128" width="131.5" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03-3490-0495" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykb-nX-K5D">
+                                <rect key="frame" x="0.0" y="108" width="131.5" height="18"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥2,980" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiq-vq-Jme">
-                                <rect key="frame" x="0.0" y="171" width="71.5" height="20"/>
+                                <rect key="frame" x="0.0" y="151" width="71.5" height="20"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -71,6 +71,7 @@
                     <constraint firstAttribute="trailing" secondItem="V5T-1v-WIa" secondAttribute="trailing" id="7kx-U8-8Za"/>
                     <constraint firstItem="V5T-1v-WIa" firstAttribute="leading" secondItem="5ly-OP-ZMa" secondAttribute="trailing" constant="10" id="ADn-oX-JkE"/>
                     <constraint firstItem="V5T-1v-WIa" firstAttribute="top" secondItem="QHI-SY-cIG" secondAttribute="bottom" constant="10" id="XuL-sR-ge9"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="QHI-SY-cIG" secondAttribute="trailing" id="dQy-yq-gW0"/>
                     <constraint firstItem="5ly-OP-ZMa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="nMU-8L-5yp"/>
                     <constraint firstItem="5ly-OP-ZMa" firstAttribute="top" secondItem="QHI-SY-cIG" secondAttribute="bottom" constant="10" id="wPX-JZ-qet"/>
                 </constraints>
