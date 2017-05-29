@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class RestaurantTableViewCell: UITableViewCell {
 
@@ -38,7 +39,11 @@ class RestaurantTableViewCell: UITableViewCell {
         telNumLabel.text = restaurant.telNum
         budgetLabel.text = "¥" + restaurant.budget.insertComma()!
         
-        //FIXME: 画像のダウンロード・表示
+        //画像のダウンロード・表示
+        if let urlString = restaurant.imageURL,
+            let url = URL(string: urlString){
+            storeImageView.af_setImage(withURL: url)
+        }
     }
     
     
