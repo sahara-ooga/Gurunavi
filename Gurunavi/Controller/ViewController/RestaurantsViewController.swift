@@ -10,7 +10,8 @@ import UIKit
 
 class RestaurantsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-        
+    let restaurantsDataSource = RestaurantsDataSource()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,6 +28,9 @@ class RestaurantsViewController: UIViewController {
         
         //self.tableView.dataSource = RestaurantsDataSource()
         //self.tableView.delegate = self
+        self.tableView.dataSource = restaurantsDataSource
+        self.tableView.delegate = self
+        registerNibs()
     }
 
     override func viewDidDisappear(_ animated: Bool) {
@@ -104,6 +108,12 @@ extension RestaurantsViewController {
     func whenDaoReceiveRestaurantInfo(notification:Notification) {
         //Daoがモデルオブジェクトを取得完了したので、表示の更新
         self.tableView.reloadData()
+    }
+    
+    func registerNibs() {
+        self.tableView.register(UINib.init(nibName: String(describing: RestaurantTableViewCell.self),
+                                           bundle: nil),
+                                forCellReuseIdentifier: String(describing: RestaurantTableViewCell.self))
     }
 }
 
