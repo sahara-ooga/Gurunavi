@@ -58,7 +58,7 @@ extension AreaViewController{
     /// - Parameter notification: ぐるなびAPIからの情報をモデルに詰め替えた状態
     func daoDidReceiveInfo(notification:Notification) {
         //storyboardからVCを取りだして、配列を渡してNVでプッシュ
-        guard let restaurantsViewController = UIStoryboard(name: String(describing: RestaurantsViewController.self),
+        guard let restaurantsViewController = UIStoryboard(name: "RestaurantsViewController",
                                           bundle: nil).instantiateInitialViewController() else { return }
         
         self.navigationController?.pushViewController(restaurantsViewController, animated: true)
