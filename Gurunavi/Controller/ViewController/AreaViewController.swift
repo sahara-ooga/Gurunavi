@@ -53,6 +53,9 @@ extension AreaViewController:UITableViewDelegate{
 
 extension AreaViewController{
     
+    /// DaoがぐるなびAPIから情報を取得しているので、エリアごとの店舗情報を表示する画面に遷移する
+    ///
+    /// - Parameter notification: ぐるなびAPIからの情報をモデルに詰め替えた状態
     func daoDidReceiveInfo(notification:Notification) {
         //storyboardからVCを取りだして、配列を渡してNVでプッシュ
         guard let restaurantsViewController = UIStoryboard(name: String(describing: RestaurantsViewController.self),
