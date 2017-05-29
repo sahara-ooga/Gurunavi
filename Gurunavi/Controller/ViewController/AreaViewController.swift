@@ -19,7 +19,7 @@ class AreaViewController: UIViewController {
         super.viewDidLoad()
         setUp()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -27,7 +27,8 @@ class AreaViewController: UIViewController {
 
     func setUp(){
         tableView.dataSource = areaDataSource
-
+        tableView.delegate = self
+        
         registerNibs()
         
         NotificationCenter.default.addObserver(self,
