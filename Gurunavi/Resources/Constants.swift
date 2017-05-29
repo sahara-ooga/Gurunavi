@@ -22,7 +22,7 @@ struct Constants {
         static let image_url = "image_url"
         static let shop_image1 = "shop_image1"
         
-        //JSONのキーではないものの、便宜上まとめた値を呼び出す際に使う
+        //JSONのキーではないものの、便宜上まとめた値を呼び出す際に使う（モデルクラス用）
         static let nearestStation = "nearestStation"
         static let imageURL = "imageURL"
     }
@@ -32,5 +32,9 @@ struct Constants {
         
     }
     
-    static let kHeightForRow:CGFloat = 400.0
+    struct TableView {
+        static let kHeightForRow:CGFloat = 400.0
+        static let kNumberOfSection = 1
+    }
+
 }

@@ -14,7 +14,7 @@ class RestaurantsDataSource: NSObject,UITableViewDataSource {
     // MARK: - Table view data source
     func numberOfSections(in tableView: UITableView) -> Int {
 
-        return 1
+        return Constants.TableView.kNumberOfSection
     }
     
     func tableView(_ tableView: UITableView,
@@ -22,7 +22,6 @@ class RestaurantsDataSource: NSObject,UITableViewDataSource {
         
         return daoRestaurants.restaurantArray.count
     }
-    
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {

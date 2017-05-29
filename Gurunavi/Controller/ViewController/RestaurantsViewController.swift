@@ -49,6 +49,6 @@ extension RestaurantsViewController {
 
 extension RestaurantsViewController:UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return Constants.kHeightForRow
+        return Constants.TableView.kHeightForRow
     }
 }
