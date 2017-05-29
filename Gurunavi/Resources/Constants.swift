@@ -6,7 +6,7 @@
 //  Copyright © 2017年 smart tech ventures. All rights reserved.
 // 参考：http://stackoverflow.com/questions/26252233/global-constants-file-in-swift
 
-import Foundation
+import UIKit
 
 struct Constants {
     struct JSONKey {
@@ -32,4 +32,5 @@ struct Constants {
         
     }
     
+    static let kHeightForRow:CGFloat = 400.0
 }
