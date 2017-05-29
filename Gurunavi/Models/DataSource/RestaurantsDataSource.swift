@@ -29,11 +29,9 @@ class RestaurantsDataSource: NSObject,UITableViewDataSource {
         
      let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RestaurantTableViewCell.self),
                                               for: indexPath) as? RestaurantTableViewCell
-     
+    
      cell?.setAppearance(restaurant: daoRestaurants.restaurantArray[indexPath.row])
-        
      return cell!
         
     }
-    
 }

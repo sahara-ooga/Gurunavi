@@ -30,6 +30,7 @@ class RestaurantTableViewCell: UITableViewCell {
     }
     
     func setAppearance(restaurant:Restaurant) {
+        
         //ラベルの設定
         nameLabel.text = restaurant.name
         nearestStationLabel.text = restaurant.nearestStation + " " + restaurant.walkDuration
@@ -39,6 +40,8 @@ class RestaurantTableViewCell: UITableViewCell {
         
         //FIXME: 画像のダウンロード・表示
     }
+    
+    
     
 }
 
